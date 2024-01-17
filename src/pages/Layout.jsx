@@ -20,13 +20,18 @@ const Layout = () => {
               </Link>
             </Button>
             <Button>
-              <Link style={styles.link} to="syllabus">
-                Syllabus
+              <Link style={styles.link} to="profile">
+                Profile
               </Link>
             </Button>
             <Button>
-              <Link style={styles.link} to="profile">
-                Profile
+              <Link style={styles.link} to="overview">
+                Overview
+              </Link>
+            </Button>
+            <Button>
+              <Link style={styles.link} to="contact">
+                Contact
               </Link>
             </Button>
           </Flex>

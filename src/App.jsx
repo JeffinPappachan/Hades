@@ -3,6 +3,8 @@ import Home from './pages/Home';
 import Syllabus from './pages/Syllabus';
 import Layout from './pages/Layout';
 import Profile from "./pages/Profile";
+import Overview from "./pages/Overview";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
@@ -11,7 +13,10 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="profile" element={<Profile />} />
-          <Route path="syllabus" element={<Syllabus />} />
+          <Route path="/profile/syllabus" element={<Syllabus />} />
+          <Route path="overview" element={<Overview />} />
+          <Route path="*" element={<h1>Not Found</h1>} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>
