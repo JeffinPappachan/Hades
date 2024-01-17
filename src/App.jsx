@@ -1,14 +1,10 @@
-import './App.css'
+import { Flex, Text, Button } from '@radix-ui/themes';
 
-function App() {
-
+export default function App() {
   return (
-    <>
-      <div>
-        <h1>React App</h1>
-      </div>
-    </>
-  )
+    <Flex direction="column" gap="2">
+      <Text>Hello from Radix Themes :)</Text>
+      <Button>Let's go</Button>
+    </Flex>
+  );
 }
-
-export default App
