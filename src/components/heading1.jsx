@@ -4,7 +4,7 @@ export const Heading1 = () => {
   return (
     <Heading
       size={{
-        initial: "3",
+        initial: "4",
         md: "6",
         lg: "8",
       }}

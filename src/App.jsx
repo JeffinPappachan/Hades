@@ -1,19 +1,19 @@
-import { Flex, Container, Heading } from '@radix-ui/themes';
-import { Heading1 } from './components/heading1';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
+import Syllabus from './pages/Syllabus';
+import Layout from './pages/Layout';
+import Profile from "./pages/Profile";
 
 export default function App() {
   return (
-    <Container>
-      <Flex
-        mt="7"
-        direction="column"
-        gap="2"
-        align="start"
-        justify="center"
-        grow="1"
-      >
-        <Heading1 />
-      </Flex>
-    </Container>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="syllabus" element={<Syllabus />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
