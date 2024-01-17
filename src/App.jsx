@@ -15,8 +15,8 @@ export default function App() {
           <Route path="profile" element={<Profile />} />
           <Route path="/profile/syllabus" element={<Syllabus />} />
           <Route path="overview" element={<Overview />} />
-          <Route path="*" element={<h1>Not Found</h1>} />
           <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<h1>Not Found</h1>} />
         </Route>
       </Routes>
     </BrowserRouter>

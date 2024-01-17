@@ -6,10 +6,10 @@ export const Heading1 = () => {
       size={{
         initial: "4",
         md: "6",
-        lg: "8",
+        lg: "7",
       }}
     >
-      Syllabus generator
+      Syllabus Generator
     </Heading>
   );
 };
