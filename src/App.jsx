@@ -1,10 +1,19 @@
-import { Flex, Text, Button } from '@radix-ui/themes';
+import { Flex, Container, Heading } from '@radix-ui/themes';
+import { Heading1 } from './components/heading1';
 
 export default function App() {
   return (
-    <Flex direction="column" gap="2">
-      <Text>Hello from Radix Themes :)</Text>
-      <Button>Let's go</Button>
-    </Flex>
+    <Container>
+      <Flex
+        mt="7"
+        direction="column"
+        gap="2"
+        align="start"
+        justify="center"
+        grow="1"
+      >
+        <Heading1 />
+      </Flex>
+    </Container>
   );
 }
