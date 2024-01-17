@@ -7,7 +7,7 @@ const Profile = () => {
       <Flex align="center" justify="center" direction="column" gap="4">
         <h1>Profile</h1>
         <Button>
-          <Link style={styles.link} to="/profile/syllabus">
+          <Link style={styles.link} to="/Hades/profile/syllabus">
             Syllabus
           </Link>
         </Button>

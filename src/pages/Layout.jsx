@@ -15,22 +15,22 @@ const Layout = () => {
           <Heading1 />
           <Flex gap="5">
             <Button>
-              <Link style={styles.link} to="/">
+              <Link style={styles.link} to="/Hades">
                 Home
               </Link>
             </Button>
             <Button>
-              <Link style={styles.link} to="profile">
+              <Link style={styles.link} to="/Hades/profile">
                 Profile
               </Link>
             </Button>
             <Button>
-              <Link style={styles.link} to="overview">
+              <Link style={styles.link} to="/Hades/overview">
                 Overview
               </Link>
             </Button>
             <Button>
-              <Link style={styles.link} to="contact">
+              <Link style={styles.link} to="/Hades/contact">
                 Contact
               </Link>
             </Button>
