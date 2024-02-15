@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import * as Select from "@radix-ui/react-select";
 import classnames from "classnames";
 import {
@@ -7,12 +7,20 @@ import {
   ChevronUpIcon,
 } from "@radix-ui/react-icons";
 import "./select.css";
+import { DataContext } from "../context/DataContext";
 
-const SelectComponent = ({ placeholder, title, options }) => {
+const SelectComponent = ({ placeholder, title, options, field }) => {
+    const { profile, setProfile } = useContext(DataContext);
+
   return (
     <Select.Root>
       <Select.Trigger className="SelectTrigger">
-        <Select.Value placeholder={placeholder} />
+        <Select.Value
+          placeholder={placeholder}
+          onChange={(event) =>
+            setProfile({ ...profile, years: event.target.value })
+          }
+        />
         <Select.Icon className="SelectIcon">
           <ChevronDownIcon />
         </Select.Icon>
